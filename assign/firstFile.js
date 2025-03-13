@@ -37,18 +37,44 @@
 
 // // // Named Export way of ES Modules :-
 
-export const addition = (a, b) => {
+// export const addition = (a, b) => {
+//     return (a + b);
+// };
+
+// export const subtraction = (a, b) => {
+//     return (a - b);
+// };
+
+// export const multiply = (a, b) => {
+//     return (a * b);
+// };
+
+// export const division = (a, b) => {
+//     return (a / b);
+// };
+
+
+//////////---------------------------------------------------------------------------------------
+
+
+// // // Export All At Once way of ES Modules :-
+
+
+const addition = (a, b) => {
     return (a + b);
 };
 
-export const subtraction = (a, b) => {
+const subtraction = (a, b) => {
     return (a - b);
 };
 
-export const multiply = (a, b) => {
+const multiply = (a, b) => {
     return (a * b);
 };
 
-export const division = (a, b) => {
+const division = (a, b) => {
     return (a / b);
 };
+
+
+export {addition, subtraction, multiply, division};

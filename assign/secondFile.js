@@ -41,6 +41,24 @@
 // // // Named Export way of ES Modules :-
 
 
+// import { addition, subtraction, division, multiply } from './firstFile.js';
+
+
+// console.log(addition(50,4));        // 54
+// console.log(subtraction(50,4));     // 46
+// console.log(division(50,4));        // 12.5
+// console.log(multiply(50,4));        // 200
+
+
+
+
+//////////---------------------------------------------------------------------------------------
+
+
+
+// // // Export All At Once way of ES Modules :-
+
+
 import { addition, subtraction, division, multiply } from './firstFile.js';
 
 
