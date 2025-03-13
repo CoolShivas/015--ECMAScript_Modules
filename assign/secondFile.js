@@ -20,8 +20,11 @@ const secFileFunc = require('./firstFile');
 
 console.log(secFileFunc.addition(5,5));     // 10
 console.log(secFileFunc.subtraction(5,5));  // 0
-console.log(secFileFunc.multiply(5,5));     // 25
+console.log(secFileFunc.multiply(50,5));     // 250
 console.log(secFileFunc.division(5,5));     // 1
+
+// // // // Instead of using node secondFile.js again and again for the result.
+// // // // Using node --watch secondFile.js It will run automatically if any thing updated.
 
 
 //////////************************************************************************************ */
