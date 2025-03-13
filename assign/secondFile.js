@@ -52,17 +52,35 @@
 
 
 
+// //////////---------------------------------------------------------------------------------------
+
+
+
+// // // // Export All At Once way of ES Modules :-
+
+
+// import { addition, subtraction, division, multiply } from './firstFile.js';
+
+
+// console.log(addition(50,4));        // 54
+// console.log(subtraction(50,4));     // 46
+// console.log(division(50,4));        // 12.5
+// console.log(multiply(50,4));        // 200
+
+
+
+
 //////////---------------------------------------------------------------------------------------
 
 
 
-// // // Export All At Once way of ES Modules :-
+// // // Aggregate way of ES Modules :-
 
 
-import { addition, subtraction, division, multiply } from './firstFile.js';
+import * as shivaji from './firstFile.js';
 
 
-console.log(addition(50,4));        // 54
-console.log(subtraction(50,4));     // 46
-console.log(division(50,4));        // 12.5
-console.log(multiply(50,4));        // 200
+console.log(shivaji.addition(50,4));        // 54
+console.log(shivaji.subtraction(50,4));     // 46
+console.log(shivaji.division(50,4));        // 12.5
+console.log(shivaji.multiply(50,4));        // 200
