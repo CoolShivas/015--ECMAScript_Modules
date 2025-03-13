@@ -70,6 +70,24 @@
 
 
 
+// //////////---------------------------------------------------------------------------------------
+
+
+
+// // // // Aggregate way of ES Modules :-
+
+
+// import * as shivaji from './firstFile.js';
+
+
+// console.log(shivaji.addition(50,4));        // 54
+// console.log(shivaji.subtraction(50,4));     // 46
+// console.log(shivaji.division(50,4));        // 12.5
+// console.log(shivaji.multiply(50,4));        // 200
+
+
+
+
 //////////---------------------------------------------------------------------------------------
 
 
@@ -77,10 +95,29 @@
 // // // Aggregate way of ES Modules :-
 
 
-import * as shivaji from './firstFile.js';
+// import mathematics from "./firstFile.js";
 
 
-console.log(shivaji.addition(50,4));        // 54
-console.log(shivaji.subtraction(50,4));     // 46
-console.log(shivaji.division(50,4));        // 12.5
-console.log(shivaji.multiply(50,4));        // 200
+// console.log(shivaji.addition(50,4));        // 54
+// console.log(shivaji.subtraction(50,4));     // 46
+// console.log(shivaji.division(50,4));        // 12.5
+// console.log(shivaji.multiply(50,4));        // 200
+
+
+
+//////////---------------------------------------------------------------------------------------
+
+
+// // // Export Default way of ES Modules :-
+
+import addition from "./firstFile.js";
+
+
+console.log(addition(20,4)); 
+// // // // Here, by the import name addition. You were expecting for the result 20 * 4 = 80;
+// // // // But, in reality the export is set to default to that division only. 
+// // // // So, the method specifies on the division is divide. 
+// // // // Therefore, the result is 5;
+
+
+// // // Here, if you are making the export default means that the only one i.e.. division is selected not others. It can be taken out on import side with any other name also but method is default that is divison only;
